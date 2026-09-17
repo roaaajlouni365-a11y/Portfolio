@@ -1,0 +1,370 @@
+body {
+    margin: 0;
+    background-color:#E8EDF2;
+    color: #2f3e4d;
+    font-family: Arial, sans-serif;
+}
+ /*navebar*/
+ .navbar {
+      background-color:#2f3e4d;
+      border: 5px solid #2f3e4d;
+}
+.navbar-brand {
+    color:#dbe7eb;
+    font-size: 35px;
+     font-family: "Lucida Handwriting", cursive;
+     margin-left: 39px; 
+}
+.navbar-nav {
+    gap: 25px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 25px;
+}
+.navbar-nav .nav-link:hover{
+    color: rgb(24, 24, 190);
+}
+
+
+section {
+    padding: 100px 10%;
+      min-height: 100vh;
+}
+.section-title {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+/*home*/
+#home {
+    min-height: 100vh;
+    padding: 80px 10%;
+    display: flex;
+    align-items: center;
+    background-color:#E8EDF2;
+}
+
+.home-card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 220px;
+}
+.img-home {
+    width: 350px;
+}
+.img-home img {
+    width: 100%;
+    height: 400px;
+   object-fit: cover;
+    border-radius: 45%;
+
+}
+.title-H {
+    color: #232c35;
+     font-size: 16px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+.title-home h1 {
+    font-family: Georgia, serif;
+    font-size: 70px;
+    line-height: 1;
+    margin: 20px 0;
+    color:  #232c35;
+}
+.button-home{
+    background-color:#232c35;
+   color: #F6F3EE;
+    border: 2px solid  #232c35;
+    border-radius: 10%;
+    font-size: 16px;
+    margin-top: 20px;
+     padding: 8px 20px;
+        transition: 0.3s;
+        text-decoration: none;
+        width: fit-content;
+/* the button is in the center*/
+        display: block;
+        margin:  8px auto 0;
+}
+.button-home:hover {
+    background-color:#26435f;
+    border-color: #171614;
+}
+/*about*/
+#about {
+    min-height: 100vh;
+    padding: 80px 10%;
+    background-color:  #2f3e4d;
+    color:#e2dfdd ;
+}
+.about-container {
+    min-height: calc(100vh - 160px);
+    display: flex;
+    align-items:flex-start;
+    gap: 70px;
+    font-size: 30px;
+}
+.about-table table {
+    width: 350px;
+    border-collapse: separate;
+    border-spacing: 0 15px;
+
+}
+.about-table th,.about-table td {
+    padding: 15px 20px;
+    text-align: left;
+    color: #26435f;
+     border: 1px solid #26435f;
+     background-color: #dbe7eb;
+     font-size: 16px;
+}
+
+
+/*experience*/
+.experience-card {
+    display: flex;
+    gap: 30px;
+    color:  #dbe7eb;
+}
+.experience-item {
+    flex: 1;
+    padding: 30px;
+    background-color:  #2f3e4d;
+    border: 2px solid  #2f3e4d;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+.experience-item:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 5px 5px 15px #5792ca;
+}
+/* qualification*/
+#qualification {
+    background-color:  #2f3e4d;
+}
+#qualification h2{
+    color: #dbe7eb ;
+}
+.qualification-container{
+    color:  #dbe7eb;
+    font-size: 20px;
+
+}
+/*skills*/
+.skills-container {
+    display: flex;
+    border:5px solid  #2f3e4d ;
+    padding: 10px;;
+}
+
+.technical-card,.skill-card {
+    flex: 1;
+}
+
+/*project*/
+#projects{
+    background-color: #2f3e4d;
+}
+#projects h2{
+    color:#e2dfdd ;
+}
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    color: #2f3e4d;
+    
+}
+.project-card {
+    padding: 30px;
+    border-radius: 10px;
+     border: 2px solid #171614;
+     background-color: #e2dfdd;
+}
+.project-card h3 {
+    margin-bottom: 15px;
+}
+.project-card p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+.project-card a {
+    text-decoration: none;
+   
+}
+.imags {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+/*referense*/
+.references-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    color:#dbe7eb  ;
+}
+.reference-card {
+    padding: 30px;
+    border: 2px solid #2f3e4d4;
+    border-radius: 10px;
+    margin: 5px;
+    background-color: #2f3e4d;
+
+}
+.reference-card a {
+text-decoration: none;
+ color:#dbe7eb;
+    transition: transform 0.3s ease;
+}
+.reference-card:hover {
+    transform: translateY(20px) scale(1.03);
+    box-shadow: 5px 5px 15px #5792ca;
+}
+.col-md-4 p a{
+    text-decoration: none;
+    color: #dbe7eb;
+}
+
+/*   Mobile - max 480px*/
+
+@media (max-width: 480px) {
+
+    nav {
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .navbar-brand {
+        font-size: 25px;
+        margin-left: 10px;
+    }
+
+    .navbar-nav {
+        gap: 10px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 14px;
+    }
+
+    section {
+        padding: 120px 7% 60px;
+        min-height: auto;
+    }
+
+    .home-card,.about-container, .experience-card,.skills-container {
+        flex-direction: column;
+    }
+
+    .title-home,.img-home,.about-table,.about-content,.skills-image {
+        width: 100%;
+    }
+
+    .title-home h1 {
+        font-size: 45px;
+    }
+
+    .img-home img {
+        height: 350px;
+    }
+
+    .experience-item {
+        border-right: none;
+        border-bottom: 1px solid #504740;
+    }
+
+    .skills-image img {
+        height: 250px;
+    }
+
+    .projects-container,.references-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================
+   Tablet - 481px to 768px
+========================= */
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+    nav {
+        padding: 20px;
+    }
+
+    .navbar-brand {
+        font-size: 30px;
+        margin-left: 15px;
+    }
+
+    .navbar-nav {
+        gap: 10px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 70px 6%;
+        min-height: 100vh;
+    }
+
+    .home-card {
+        gap: 50px;
+    }
+
+    .title-home {
+        width: 40%;
+    }
+
+    .img-home {
+        width: 45%;
+    }
+
+    .title-home h1 {
+        font-size: 50px;
+    }
+
+    .img-home img {
+        height: 400px;
+    }
+
+    .about-table {
+        width: 40%;
+    }
+
+    .about-content {
+        width: 50%;
+    }
+
+    .about-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .experience-card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .skills-image {
+        width: 35%;
+    }
+
+    #about,#qualification,#projects {
+        background-color: #5f554e;
+    }
+    .projects-container,.references-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

@@ -307,34 +307,56 @@ text-decoration: none;
 /*   Mobile - max 480px*/
 
 @media (max-width: 480px) {
-.navbar {
-    padding: 3px 8px;
-}
 
-.navbar-brand {
-    font-size: 18px;
-    margin-bottom: 3px;
-}
-
-.navbar-nav .nav-link {
-    font-size: 11px;
-    padding: 2px 4px;
-}
-   
-    .navbar-nav {
-        gap: 10px;
+    /* Navbar */
+    .navbar {
+        padding: 5px 10px;
     }
 
+    .navbar .container-fluid {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-brand {
+        font-size: 20px;
+        margin-left: 5px;
+        margin-bottom: 5px;
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        margin-left: 5px !important;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 12px;
+        padding: 2px 5px;
+    }
+
+
+    /* Sections */
     section {
-        padding: 120px 7% 60px;
+        padding: 60px 7% 50px;
         min-height: auto;
     }
 
-    .home-card,.about-container, .experience-card,.skills-container {
-        flex-direction: column;
+
+    /* Home */
+    #home {
+        padding-top: 60px;
     }
 
-    .title-home,.img-home,.about-table,.about-content,.skills-image {
+    .home-card {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .title-home,
+    .img-home {
         width: 100%;
     }
 
@@ -346,20 +368,57 @@ text-decoration: none;
         height: 350px;
     }
 
-    .experience-item {
-        border-right: none;
-        border-bottom: 1px solid #504740;
+
+    /* About Me */
+    #about {
+        padding: 60px 7% 50px;
     }
 
-    .skills-image img {
-        height: 250px;
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        min-height: auto;
+        font-size: 18px;
     }
 
-    .projects-container,.references-container {
+    .about-table {
+        width: 100%;
+    }
+
+    .about-table table {
+        width: 100%;
+    }
+
+    .about-content {
+        width: 100%;
+    }
+
+
+    /* Experience */
+    .experience-card {
+        flex-direction: column;
+    }
+
+
+    /* Skills */
+    .skills-container {
+        flex-direction: column;
+    }
+
+    .technical-card,
+    .skill-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+
+    /* Projects & References */
+    .projects-container,
+    .references-container {
         grid-template-columns: 1fr;
     }
 }
-
 
 /* =========================
    Tablet - 481px to 768px

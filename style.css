@@ -16,14 +16,15 @@ body {
      margin-left: 39px; 
 }
 .navbar-nav {
-    gap: 25px;
+    gap: 20px;
 }
 
 .navbar-nav .nav-link {
-    font-size: 25px;
+    font-size: 15px;
+    box-shadow: 2px 2px 5px rgba(182, 169, 94, 0.234);
 }
 .navbar-nav .nav-link:hover{
-    color: rgb(24, 24, 190);
+    color: rgb(200, 200, 215);
 }
 
 
@@ -77,20 +78,26 @@ section {
     margin: 20px 0;
     color:  #232c35;
 }
+.buttons {
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+}
 .button-home{
     background-color:#232c35;
    color: #F6F3EE;
     border: 2px solid  #232c35;
     border-radius: 10%;
     font-size: 16px;
-    margin-top: 20px;
+    margin-top: 4px;
      padding: 8px 20px;
         transition: 0.3s;
         text-decoration: none;
         width: fit-content;
 /* the button is in the center*/
-        display: block;
-        margin:  8px auto 0;
+
+      
+       
 }
 .button-home:hover {
     background-color:#26435f;
@@ -154,19 +161,80 @@ section {
 .qualification-container{
     color:  #dbe7eb;
     font-size: 20px;
+}
+.timeline {
+    position: relative;
+    padding-left: 20px;
+}
+.timeline-content span {
+    display: block;
+    font-size: 14px;
+    margin-top: 0;
+}
+.timeline::before {
+    content: " ";
+    position: absolute;
+    left: 10px;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background-color: #dbe7eb;
+}
+.timeline-item {
+    position: relative;
+    margin-bottom: 20px;
+}
 
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -16px;
+    top: 5px;
+    width: 14px;
+    height: 14px;
+    background-color: #26435f;
+    border: 3px solid #dbe7eb;
+    border-radius: 50%;
+    z-index: 1;
+}
+.timeline-content span {
+    font-size: 15px;
 }
 /*skills*/
 .skills-container {
     display: flex;
-    border:5px solid  #2f3e4d ;
-    padding: 10px;;
+    padding: 10px;
 }
 
-.technical-card,.skill-card {
+.technical-card, .skill-card {
     flex: 1;
+    border: 2px solid #2f3e4d;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
 }
 
+.technical-card:active, .skill-card:active {
+    transform: scale(1.2);
+     box-shadow: 5px 5px 15px #5792ca;
+}
+
+.border-skills li {
+    display: inline-block;
+    padding: 8px 15px;
+    margin: 5px;
+    background-color: #26435f;
+    color: #dbe7eb;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+
+.border-skills li:hover {
+    transform: scale(1.1);
+}
 /*project*/
 #projects{
     background-color: #2f3e4d;
@@ -231,6 +299,9 @@ text-decoration: none;
 .col-md-4 p a{
     text-decoration: none;
     color: #dbe7eb;
+}
+.reference-card a:first-of-type {
+    margin-right: 15px;
 }
 
 /*   Mobile - max 480px*/

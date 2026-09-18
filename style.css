@@ -310,7 +310,7 @@ text-decoration: none;
 
     /* Navbar */
     .navbar {
-        padding: 5px 10px;
+        padding: 10px;
     }
 
     .navbar .container-fluid {
@@ -320,21 +320,22 @@ text-decoration: none;
     }
 
     .navbar-brand {
-        font-size: 20px;
-        margin-left: 5px;
-        margin-bottom: 5px;
+        font-size: 25px;
+        margin-left: 10px;
+        margin-bottom: 10px;
     }
 
     .navbar-nav {
         display: flex;
-        flex-direction: column;
-        gap: 0;
-        margin-left: 5px !important;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5px;
+        margin-left: 10px !important;
     }
 
     .navbar-nav .nav-link {
-        font-size: 12px;
-        padding: 2px 5px;
+        font-size: 13px;
+        padding: 5px 7px;
     }
 
 
@@ -419,7 +420,6 @@ text-decoration: none;
         grid-template-columns: 1fr;
     }
 }
-
 /* =========================
    Tablet - 481px to 768px
 ========================= */

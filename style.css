@@ -307,23 +307,22 @@ text-decoration: none;
 /*   Mobile - max 480px*/
 
 @media (max-width: 480px) {
+.navbar {
+    padding: 3px 8px;
+}
 
-    nav {
-        padding: 15px;
-        gap: 10px;
-    }
+.navbar-brand {
+    font-size: 18px;
+    margin-bottom: 3px;
+}
 
-    .navbar-brand {
-        font-size: 25px;
-        margin-left: 10px;
-    }
-
+.navbar-nav .nav-link {
+    font-size: 11px;
+    padding: 2px 4px;
+}
+   
     .navbar-nav {
         gap: 10px;
-    }
-
-    .navbar-nav .nav-link {
-        font-size: 14px;
     }
 
     section {
